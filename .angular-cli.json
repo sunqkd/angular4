@@ -20,6 +20,7 @@
       "prefix": "app",
       "styles": [
         "styles.css",
+        "../node_modules/_admin-lte@3.0.0-alpha@admin-lte/plugins/bootstrap/css/bootstrap.min.css",
         "../node_modules/_admin-lte@3.0.0-alpha@admin-lte/plugins/font-awesome/css/font-awesome.min.css",
         "../node_modules/_admin-lte@3.0.0-alpha@admin-lte/dist/css/adminlte.min.css"
       ],

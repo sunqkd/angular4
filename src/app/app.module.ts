@@ -8,6 +8,7 @@ import { MenuComponent } from './menu/menu.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContentComponent } from './content/content.component';
+import { StockManageComponent } from './stock/stock-manage/stock-manage.component';
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { ContentComponent } from './content/content.component';
     MenuComponent,
     SidebarComponent,
     FooterComponent,
-    ContentComponent
+    ContentComponent,
+    StockManageComponent
   ],
   imports: [
     BrowserModule
