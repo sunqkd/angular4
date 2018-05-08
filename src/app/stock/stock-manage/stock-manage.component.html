@@ -1,6 +1,15 @@
 <div class="box">
-	<div class="box-header with-border">
-		<h3 class="box-title">Bordered Table</h3>
+	<div class="box-header with-border" style="width:100%;display:flex;justify-content: space-between;">
+		<a href="#" class="btn btn-success btn-xs"><i class="fa  fa-plus"></i>创建</a>
+		<div class="box-tools">
+			<div class="input-group input-group-sm" style="width: 150px;">
+			  	<input type="text" name="table_search" class="form-control pull-right" placeholder="股票名称">
+
+				<div class="input-group-btn">
+					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- /.box-header -->
 	<div class="box-body">
@@ -17,10 +26,10 @@
 				<td>{{ i +1 }}</td>
 				<td>{{stock.name}}</td>
 				<td>{{stock.price}}</td>
-				<td>{{stock.rating}}</td>
+				<td><app-starts [rating]="stock.rating"></app-starts></td>
 				<td>
-					<a>修改</a>
-					<a>删除</a>
+					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-eyedropper"></i>修改</a>
+					<a href="#" class="btn btn-danger btn-sm"><i class="fa fa-remove "></i>删除</a>
 				</td>
 			</tr>
 		</table>
