@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { Router } from '@angular/router'
 @Component({
   selector: 'app-stock-manage',
   templateUrl: './stock-manage.component.html',
@@ -9,7 +9,11 @@ export class StockManageComponent implements OnInit {
 
 	private stocks:Array<Stock>;
 
-	constructor() { }
+	constructor(public router:Router) {
+
+	}
+
+    
 
 	ngOnInit() { // 頁面初始化時被調用
 		this.stocks = [
@@ -20,6 +24,13 @@ export class StockManageComponent implements OnInit {
 			new Stock(5,"第五支股票",1.4,7.5,"这是第五支股票",["IT","互联网"]),
 			new Stock(6,"第六支股票",1.5,4.8,"这是第六支股票",["IT","互联网"])
 		];
+	}
+
+	create(){
+		this.router.navigateByUrl('/stock/0')
+	}
+	update(stock:Stock){
+		this.router.navigateByUrl('/stock/' + stock.id)
 	}
 
 }

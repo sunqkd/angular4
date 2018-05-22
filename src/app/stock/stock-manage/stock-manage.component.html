@@ -1,6 +1,6 @@
 <div class="box">
 	<div class="box-header with-border" style="width:100%;display:flex;justify-content: space-between;">
-		<a href="#" class="btn btn-success btn-xs"><i class="fa  fa-plus"></i>创建</a>
+		<a href="javascript:;" class="btn btn-success btn-xs"  (click)="create()"><i class="fa  fa-plus"></i>创建</a>
 		<div class="box-tools">
 			<div class="input-group input-group-sm" style="width: 150px;">
 			  	<input type="text" name="table_search" class="form-control pull-right" placeholder="股票名称">
@@ -28,7 +28,7 @@
 				<td>{{stock.price}}</td>
 				<td><app-starts [rating]="stock.rating"></app-starts></td>
 				<td>
-					<a href="#" class="btn btn-warning btn-sm"><i class="fa fa-eyedropper"></i>修改</a>
+					<a href="javascript:;" class="btn btn-warning btn-sm" (click)="update(stock)"><i class="fa fa-eyedropper"></i>修改</a>
 					<a href="#" class="btn btn-danger btn-sm"><i class="fa fa-remove "></i>删除</a>
 				</td>
 			</tr>
